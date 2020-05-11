@@ -1,0 +1,5 @@
+Flask==1.0.0
+Flask-Session
+psycopg2-binary
+SQLAlchemy
+ItsDangerous==0.24
