@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="672ae9b8-1778-4d9f-ad76-af84a8d5a3a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flask_session/86c19716fe6119a9c068db1be0961d3e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_session/ed088e8e7a7aa632ee631da3d8411cec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" beforeDir="false" afterPath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/86c19716fe6119a9c068db1be0961d3e" beforeDir="false" afterPath="$PROJECT_DIR$/flask_session/86c19716fe6119a9c068db1be0961d3e" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +83,7 @@
       <workItem from="1589214174556" duration="3556000" />
       <workItem from="1589224656331" duration="7990000" />
       <workItem from="1589302749866" duration="176000" />
-      <workItem from="1589302969873" duration="7691000" />
+      <workItem from="1589302969873" duration="8372000" />
     </task>
     <task id="LOCAL-00001" summary="day1 layout and pages">
       <created>1589232625768</created>
@@ -99,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589232625768</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="login and register">
+      <created>1589313925315</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589313925315</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +121,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="day1 layout and pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="day1 layout and pages" />
+    <MESSAGE value="login and register" />
+    <option name="LAST_COMMIT_MESSAGE" value="login and register" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589227799247">
