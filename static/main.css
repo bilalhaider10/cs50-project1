@@ -4,8 +4,16 @@
     margin:auto;
 }
 
+.login-form{
+   width: 50% !important;
+    margin:auto;
+}
+
 /*.registerLogin{*/
 /*    margin-left: 100%;*/
 /*    margin-right: 0;*/
 /*}*/
 
+.navbar-nav{
+    margin-left: auto;
+}

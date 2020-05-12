@@ -1,10 +1,10 @@
 import os
 
-from flask import Flask, session, flash, render_template, request, abort, redirect,url_for
+from flask import Flask, session, flash, render_template, request, abort, redirect, url_for
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
-
+import csv
 import requests
 
 res = requests.get("https://www.goodreads.com/book/review_counts.json",
@@ -27,12 +27,20 @@ db = scoped_session(sessionmaker(bind=engine))
 app.static_folder = 'static'
 
 
+f = open("books.csv")
+reader = csv.reader(f)
+for isbn, title, author, released_year in reader:
+    db.execute("INSERT INTO books (isbn, title, author, released_year) VALUES (:isbn, :title, :author,:released_year)",
+               {"isbn": isbn,"title":title, "author": author, "released_year": released_year})
+    print(f"Added {isbn} ")
+db.commit()
+
 @app.route("/")
 def index():
     if not session.get('logged_in'):
         return render_template("index.html", message="Please Register/Login")
     else:
-       return render_template("index.html",message="Hi")
+        return render_template("index.html", message="Hi")
 
 
 @app.route("/register")
@@ -68,17 +76,18 @@ def login_details():
     if db.execute("SELECT * FROM users WHERE email=:email AND password=:password",
                   {"email": email, "password": password}).rowcount != 0:
         session['logged_in'] = True
-        return render_template("index.html", message="Logged in Successfully")
+        return redirect(url_for("index"))
     else:
 
-        return render_template("error.html" ,message="wrong password")
-
+        return render_template("error.html", message="wrong password")
 
 
 @app.route("/logout")
 def logout():
-    session['logged_in']=False
+    session['logged_in'] = False
     return redirect(url_for("index"))
+
 
 if __name__ == "__main__":
     app.secret_key = os.urandom(12)
+    main()
