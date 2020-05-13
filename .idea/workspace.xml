@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="672ae9b8-1778-4d9f-ad76-af84a8d5a3a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flask_session/6e0e8b11805b6cc7506457f24f36dcd3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/books.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bookDetails.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" beforeDir="false" afterPath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/import.py" beforeDir="false" afterPath="$PROJECT_DIR$/import.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/6e0e8b11805b6cc7506457f24f36dcd3" beforeDir="false" afterPath="$PROJECT_DIR$/flask_session/6e0e8b11805b6cc7506457f24f36dcd3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +114,7 @@
       <workItem from="1589224656331" duration="7990000" />
       <workItem from="1589302749866" duration="176000" />
       <workItem from="1589302969873" duration="15394000" />
-      <workItem from="1589382453109" duration="14414000" />
+      <workItem from="1589382453109" duration="17082000" />
     </task>
     <task id="LOCAL-00001" summary="day1 layout and pages">
       <created>1589232625768</created>
@@ -149,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589321517020</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="books searching page finished">
+      <created>1589401732253</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589401732253</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +176,8 @@
     <MESSAGE value="login and register" />
     <MESSAGE value="navbar ok" />
     <MESSAGE value="data added" />
-    <option name="LAST_COMMIT_MESSAGE" value="data added" />
+    <MESSAGE value="books searching page finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="books searching page finished" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="90" key="#Inspections" timestamp="1589318206993">
@@ -185,10 +188,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1589227799247" />
-    <state x="393" y="26" key="CommitChangelistDialog2" timestamp="1589321515762">
+    <state x="393" y="26" key="CommitChangelistDialog2" timestamp="1589401731640">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="393" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1589321515762" />
+    <state x="393" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1589401731640" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1589229042832">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

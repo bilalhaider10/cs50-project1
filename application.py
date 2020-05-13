@@ -86,24 +86,28 @@ def search():
     return render_template("search.html", message="Search Books")
 
 
+# //Search form route
+
 @app.route("/search-info", methods=["POST"])
 def search_books():
     info = request.form.get("info")
-
+    info = info.lower()
     books = db.execute(
-        "SELECT * FROM books WHERE isbn LIKE '%{}%' OR title LIKE '%{}%' OR author LIKE '%{}%' LIMIT 10 ".format(info, info,
-                                                                                                       info)).fetchall()
+        "SELECT * FROM books WHERE isbn LIKE '%{}%' OR LOWER (title) LIKE '%{}%' OR LOWER (author) LIKE '%{}%' LIMIT 10 ".format(
+            info, info,
+            info)).fetchall()
 
     if not books:
         return render_template("error.html", message="404 No Books Found")
 
-    return render_template("books.html", books=books, message="Books Found",var=0)
+    return render_template("books.html", books=books, message="Books Found", var=0)
 
 
+@app.route("/search-books/<int:book_id>")
+def book_details(book_id):
+    book = db.execute("SELECT * from books where id =:id", {"id": book_id}).fetchone()
 
-
-
-
+    return render_template("bookDetails.html", message="Book Info", book=book)
 
 
 if __name__ == "__main__":

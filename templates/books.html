@@ -8,29 +8,29 @@
 
 
 {% block body %}
-<div class="container mt-5">
-    <table class="table">
-        <thead class="thead-dark">
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">ISBN</th>
-            <th scope="col">Title</th>
-            <th scope="col">Author</th>
-        </tr>
-        </thead>
-
-
-        <tbody>
-        {% for book in books %}
+    <div class="container mt-5">
+        <table class="table w-50 ml-auto mr-auto">
+            <thead class="thead-dark">
             <tr>
+                <th scope="col">#</th>
 
-                <th scope="row">{{ loop.index}} </th>
-                <td>{{ book.isbn }}</td>
-                <td>{{ book.title }}</td>
-                <td>{{ book.author }}</td>
+                <th scope="col">Title</th>
+
             </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-</div>
+            </thead>
+
+
+            <tbody>
+            {% for book in books %}
+                <tr>
+
+                    <th scope="row">{{ loop.index }} </th>
+
+                    <td><a href="{{ url_for('book_details',book_id=book.id) }}">{{ book.title }}</a></td>
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
 {% endblock %}

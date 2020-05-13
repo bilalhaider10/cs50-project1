@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+
+{% block heading %}
+    {{ message }}
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <table class="table text-center w-50 ml-auto mr-auto">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">ISBN</th>
+
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Released Year</th>
+                <th scope="col"> reviews </th>
+
+
+            </tr>
+            </thead>
+
+
+            <tbody>
+
+            <tr>
+                <td>{{ book.isbn }}</td>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.released_year }}</td>
+
+
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
