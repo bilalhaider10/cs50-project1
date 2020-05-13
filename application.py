@@ -24,16 +24,9 @@ Session(app)
 # Set up database
 engine = create_engine(os.getenv("DATABASE_URL"))
 db = scoped_session(sessionmaker(bind=engine))
+
 app.static_folder = 'static'
 
-
-f = open("books.csv")
-reader = csv.reader(f)
-for isbn, title, author, released_year in reader:
-    db.execute("INSERT INTO books (isbn, title, author, released_year) VALUES (:isbn, :title, :author,:released_year)",
-               {"isbn": isbn,"title":title, "author": author, "released_year": released_year})
-    print(f"Added {isbn} ")
-db.commit()
 
 @app.route("/")
 def index():
@@ -88,6 +81,30 @@ def logout():
     return redirect(url_for("index"))
 
 
+@app.route("/search")
+def search():
+    return render_template("search.html", message="Search Books")
+
+
+@app.route("/search-info", methods=["POST"])
+def search_books():
+    info = request.form.get("info")
+
+    books = db.execute(
+        "SELECT * FROM books WHERE isbn LIKE '%{}%' OR title LIKE '%{}%' OR author LIKE '%{}%' LIMIT 10 ".format(info, info,
+                                                                                                       info)).fetchall()
+
+    if not books:
+        return render_template("error.html", message="404 No Books Found")
+
+    return render_template("books.html", books=books, message="Books Found",var=0)
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     app.secret_key = os.urandom(12)
-    main()

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+
+{% block heading %}
+    {{ message }}
+{% endblock %}
+
+
+
+{% block body %}
+<div class="container mt-5">
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">ISBN</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+        </tr>
+        </thead>
+
+
+        <tbody>
+        {% for book in books %}
+            <tr>
+
+                <th scope="row">{{ loop.index}} </th>
+                <td>{{ book.isbn }}</td>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

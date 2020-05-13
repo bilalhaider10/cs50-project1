@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+
+{% block heading %}
+    {{ message }}
+{% endblock %}
+
+
+{% block body %}
+
+
+    <div class="container">
+
+
+        <nav class="navbar navbar-light bg-light text-center">
+            <form class="form-inline  w-75 text-center ml-auto mr-auto" action="/search-info" method="post">
+                <input class="form-control mr-sm-2 ml-5 w-75 " type="search" name="info"
+                       placeholder="Input isbn, title or author name of the book" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>
+
+
+    </div>
+
+
+
+
+{% endblock %}
