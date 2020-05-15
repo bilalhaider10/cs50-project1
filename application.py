@@ -66,13 +66,17 @@ def login_details():
     email = request.form.get("email")
     password = request.form.get("password")
 
-    if db.execute("SELECT * FROM users WHERE email=:email AND password=:password",
-                  {"email": email, "password": password}).rowcount != 0:
-        session['logged_in'] = True
-        return redirect(url_for("index"))
-    else:
-
+    user = db.execute("SELECT * FROM users WHERE email=:email AND password=:password",
+                      {"email": email, "password": password}).fetchone()
+    if not user:
         return render_template("error.html", message="wrong password")
+
+    else:
+        session['logged_in'] = True
+        print(user.id)
+        session['user_id'] = user.id
+
+        return redirect(url_for("search"))
 
 
 @app.route("/logout")
@@ -81,7 +85,7 @@ def logout():
     return redirect(url_for("index"))
 
 
-@app.route("/search")
+@app.route("/search/")
 def search():
     return render_template("search.html", message="Search Books")
 
@@ -106,8 +110,25 @@ def search_books():
 @app.route("/search-books/<int:book_id>")
 def book_details(book_id):
     book = db.execute("SELECT * from books where id =:id", {"id": book_id}).fetchone()
+    reviews=db.execute("SELECT * from reviews where book_id=:book_id", {"book_id": book_id}).fetchall()
 
-    return render_template("bookDetails.html", message="Book Info", book=book)
+    session['book_id']=book_id
+
+    return render_template("bookDetails.html", message="Book Info", book=book,reviews=reviews)
+
+
+@app.route("/review", methods=["POST"])
+def review():
+    user_id = session['user_id']
+    book_id = session['book_id']
+    review = request.form.get("input")
+    text_review = request.form.get("textReview")
+
+    db.execute(
+        "Insert into reviews (review,book_id,text_review,user_id) VALUES (:review,:book_id,:text_review,:user_id)",
+        {"review": review, "book_id": book_id, "text_review": text_review, "user_id": user_id})
+    db.commit()
+    return redirect(url_for("index"))
 
 
 if __name__ == "__main__":

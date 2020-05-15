@@ -6,34 +6,87 @@
 {% endblock %}
 
 {% block body %}
-    <div class="container mt-5">
-        <table class="table text-center w-50 ml-auto mr-auto">
+    <div class="container mt-5 text-center">
+        <table class="table  text-center w-50 ml-auto mr-auto">
+
             <thead class="thead-dark">
+            <tr>
+                <td>
+                    <img src="http://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg"/>
+                </td>
+                <td colspan="3">
+                <h3>User Reviews</h3>
+                    {% for review in reviews %}
+                        <p>{{ review.text_review }},</p>
+                    {% endfor %}
+                </td>
+
+            </tr>
+            </thead>
+
+
+            <thead class="thead-dark">
+
+
             <tr>
                 <th scope="col">ISBN</th>
 
                 <th scope="col">Title</th>
                 <th scope="col">Author</th>
                 <th scope="col">Released Year</th>
-                <th scope="col"> reviews </th>
 
 
             </tr>
+
             </thead>
-
-
             <tbody>
+
 
             <tr>
                 <td>{{ book.isbn }}</td>
                 <td>{{ book.title }}</td>
                 <td>{{ book.author }}</td>
                 <td>{{ book.released_year }}</td>
+                {#                {% for review in reviews %}#}
+                {#                <td>{{ review.review }}</td>#}
+                {#                <td>{{ review.text_review }}</td>#}
+                {#                {% endfor %}#}
 
 
             </tr>
 
             </tbody>
         </table>
+
+    </div>
+
+    <hr>
+    <div class="container ">
+
+        <form class="w-50 ml-auto mr-auto" action="{{ url_for('review') }}" method="post">
+            <div class="form-group">
+
+                <label for="inputReview">Choose Rating</label>
+                <select name="input" id="" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+
+            </div>
+
+            <div class="form-group">
+                <label for="textarea">Additional Comments:</label>
+
+                <textarea name="textReview" id="" cols="30" rows="10" class="form-control"
+                          placeholder="Write your Book review"></textarea>
+            </div>
+            <button class="btn btn-md btn-success" type="submit">Submit review</button>
+        </form>
+
+
     </div>
 {% endblock %}

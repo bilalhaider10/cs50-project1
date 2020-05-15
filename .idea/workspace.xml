@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="672ae9b8-1778-4d9f-ad76-af84a8d5a3a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/bookDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_session/183f82b59047ec234988047191a94bfa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_session/a975e5002d72db8b5f111245246617bf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" beforeDir="false" afterPath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_session/6e0e8b11805b6cc7506457f24f36dcd3" beforeDir="false" afterPath="$PROJECT_DIR$/flask_session/6e0e8b11805b6cc7506457f24f36dcd3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/books.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bookDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bookDetails.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,10 @@
       <workItem from="1589224656331" duration="7990000" />
       <workItem from="1589302749866" duration="176000" />
       <workItem from="1589302969873" duration="15394000" />
-      <workItem from="1589382453109" duration="17082000" />
+      <workItem from="1589382453109" duration="17260000" />
+      <workItem from="1589474887095" duration="913000" />
+      <workItem from="1589561152327" duration="7000" />
+      <workItem from="1589563110103" duration="13835000" />
     </task>
     <task id="LOCAL-00001" summary="day1 layout and pages">
       <created>1589232625768</created>
@@ -196,26 +199,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1589229042832" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1589383919133">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1589404546707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589383919133" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1589383919133">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589404546707" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1589404546707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589383919133" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1589383919133">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589404546707" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1589404546707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589383919133" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1589383919133">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589404546707" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1589404546707">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589383919133" />
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1589382593179">
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589404546707" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1589563136169">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1589382593179" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1589563136169" />
     <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589313939318">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
