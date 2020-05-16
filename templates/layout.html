@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <title>{{ title }}</title>
 
     <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="main.css") }}">
-
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -15,11 +15,12 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Navbar</a>
+    <a class="navbar-brand" href="/">بسم الله الرحمن الرحيم </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
 
@@ -41,13 +42,14 @@
                 </li>
 
             {% endif %}
+
         </ul>
 
     </div>
 </nav>
 
-<div class="container text-center">
-    <h1>{% block heading %}{% endblock %}</h1>
+<div class="container text-center mt-5 ">
+    <h1 class="headings">{% block heading %}{% endblock %}</h1>
 </div>
 
 

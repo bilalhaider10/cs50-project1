@@ -12,3 +12,16 @@
 .navbar-nav{
     margin-left: auto;
 }
+.table-books{
+    background-color: #F0F8FF;
+}
+.headings{
+    font-size: 3.5rem;
+    text-decoration: underline;
+    font-family: 'PT Serif', serif;
+
+}
+
+.navbar-brand{
+    font-family: 'Amiri', serif;
+}

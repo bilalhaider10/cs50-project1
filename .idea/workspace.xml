@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="672ae9b8-1778-4d9f-ad76-af84a8d5a3a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flask_session/183f82b59047ec234988047191a94bfa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_session/a975e5002d72db8b5f111245246617bf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_session/c8247bf2220ffb7f0120e03943867d67" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" beforeDir="false" afterPath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/bookDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bookDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +119,8 @@
       <workItem from="1589382453109" duration="17260000" />
       <workItem from="1589474887095" duration="913000" />
       <workItem from="1589561152327" duration="7000" />
-      <workItem from="1589563110103" duration="13835000" />
+      <workItem from="1589563110103" duration="13941000" />
+      <workItem from="1589643980409" duration="10261000" />
     </task>
     <task id="LOCAL-00001" summary="day1 layout and pages">
       <created>1589232625768</created>
@@ -154,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589401732253</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="review finished with image api">
+      <created>1589579075519</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589579075519</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +190,8 @@
     <MESSAGE value="navbar ok" />
     <MESSAGE value="data added" />
     <MESSAGE value="books searching page finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="books searching page finished" />
+    <MESSAGE value="review finished with image api" />
+    <option name="LAST_COMMIT_MESSAGE" value="review finished with image api" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="90" key="#Inspections" timestamp="1589318206993">
@@ -191,10 +202,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1589227799247" />
-    <state x="393" y="26" key="CommitChangelistDialog2" timestamp="1589401731640">
+    <state x="393" y="26" key="CommitChangelistDialog2" timestamp="1589579074950">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="393" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1589401731640" />
+    <state x="393" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1589579074950" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1589229042832">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -215,10 +226,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589404546707" />
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1589563136169">
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1589643985982">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1589563136169" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1589643985982" />
     <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589313939318">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

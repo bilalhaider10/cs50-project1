@@ -7,25 +7,28 @@
 
 {% block body %}
     <div class="container mt-5 text-center">
-        <table class="table  text-center w-50 ml-auto mr-auto">
+        <table class="table table-bordered text-center w-75 ml-auto mr-auto table-books">
 
             <thead class="thead-dark">
             <tr>
-                <td>
+                <td colspan="3">
                     <img src="http://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg"/>
                 </td>
-                <td colspan="3">
-                <h3>User Reviews</h3>
-                    {% for review in reviews %}
-                        <p>{{ review.text_review }},</p>
-                    {% endfor %}
+                <td colspan="5" class=" mx-0 px-0 py-0">
+                    <h3 class="bg-dark text-white mx-0 my-0 px-0 py-2">User Reviews</h3>
+                    <ol class="text-left my-2 list-group">
+                        {% for review in reviews %}
+                            <li class="list-group-item">{{ review.text_review }}</li>
+                        {% endfor %}
+                    </ol>
+
                 </td>
 
             </tr>
             </thead>
 
 
-            <thead class="thead-dark">
+            <thead class="thead-dark ">
 
 
             <tr>
@@ -34,7 +37,8 @@
                 <th scope="col">Title</th>
                 <th scope="col">Author</th>
                 <th scope="col">Released Year</th>
-
+                <th scope="col">Average Rating from (Good Reads)</th>
+                <th scope="col">Number of Ratings from (Good Reads)</th>
 
             </tr>
 
@@ -47,10 +51,9 @@
                 <td>{{ book.title }}</td>
                 <td>{{ book.author }}</td>
                 <td>{{ book.released_year }}</td>
-                {#                {% for review in reviews %}#}
-                {#                <td>{{ review.review }}</td>#}
-                {#                <td>{{ review.text_review }}</td>#}
-                {#                {% endfor %}#}
+                <td>{{ apireview['average_rating'] }}</td>
+                <td>{{ apireview['work_ratings_count']}}</td>
+
 
 
             </tr>
