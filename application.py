@@ -15,6 +15,7 @@ app = Flask(__name__)
 if not os.getenv("DATABASE_URL"):
     raise RuntimeError("DATABASE_URL is not set")
 
+key=os.getenv("API_KEY")
 # Configure session to use filesystem
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
@@ -29,6 +30,7 @@ app.static_folder = 'static'
 
 @app.route("/")
 def index():
+
     if not session.get('logged_in'):
         return render_template("index.html", message="Please Register/Login")
     else:
@@ -111,7 +113,7 @@ def book_details(book_id):
     book = db.execute("SELECT * from books where id =:id", {"id": book_id}).fetchone()
     reviews = db.execute("SELECT * from reviews where book_id=:book_id LIMIT 5", {"book_id": book_id}).fetchall()
     res = requests.get("https://www.goodreads.com/book/review_counts.json",
-                       params={"key": "y2jcOE9RMX0cbEowqFDMbw", "isbns": book.isbn})
+                       params={"key": str(key), "isbns": book.isbn})
     review = res.json()
 
     session['book_id'] = book_id

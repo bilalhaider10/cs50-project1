@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="672ae9b8-1778-4d9f-ad76-af84a8d5a3a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flask_session/c8247bf2220ffb7f0120e03943867d67" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" beforeDir="false" afterPath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bookDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bookDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/c8247bf2220ffb7f0120e03943867d67" beforeDir="false" afterPath="$PROJECT_DIR$/flask_session/c8247bf2220ffb7f0120e03943867d67" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +117,7 @@
       <workItem from="1589474887095" duration="913000" />
       <workItem from="1589561152327" duration="7000" />
       <workItem from="1589563110103" duration="13941000" />
-      <workItem from="1589643980409" duration="10261000" />
+      <workItem from="1589643980409" duration="11783000" />
     </task>
     <task id="LOCAL-00001" summary="day1 layout and pages">
       <created>1589232625768</created>
@@ -198,6 +195,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="90" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1589318206993" />
+    <state x="542" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589655163993">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="542" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1589655163993" />
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589227799247">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
